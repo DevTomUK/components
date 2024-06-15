@@ -18,23 +18,31 @@ export default function Projects() {
 
     return (
         <div className="projects-main">
-            <div className={displayProject ? 'projects-single-item' : 'projects-single-item-full'}>
+            <div className={displayProject ? 'projects-single-item-full' :'projects-single-item' }>
                 <div className="projects-single-item-preview">
                     <img className='projects-single-item-image' src={selectedProject.images[0]} alt={selectedProject.title} />
+                    <ul className="single-item-small-image">
+                    {selectedProject.images.map((image, index) => (
+                        <img key={index} src={image} alt="" className='small-image'/>
+                    ))}
+                    </ul>
+
+
                 </div>
-                {displayProject ? <div className="projects-single-item-info">
-                    <h4>{selectedProject.title}</h4>
-                    <p>{selectedProject.description}</p>
-                    <button onClick={toggleDisplayProject}>More info</button>
-                </div>
-                :
+                {displayProject ? 
                 <div className="projects-single-item-info">
                     <h4>More info</h4>
                     <p>This is some more info...</p>
-                    <button onClick={toggleDisplayProject}>Back to project</button>
+                    <button onClick={() => toggleDisplayProject()}>Back to project</button>
+                </div>
+                :
+                <div className="projects-single-item-info">
+                    <h4>{selectedProject.title}</h4>
+                    <p>{selectedProject.description}</p>
+                    <button onClick={() => toggleDisplayProject()}>More info</button>
                 </div>}
             </div>
-            <div className={displayProject ? 'projects-list-items' : 'projects-list-items-hidden'}>
+            <div className={displayProject ? 'projects-list-items-hidden' : 'projects-list-items'}>
                 <ul>
                     {projects.map((project) => (
                         <li onClick={() => toggleSelectProject(project.id)} className='project-item' key={project.id}>

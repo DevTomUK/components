@@ -44,11 +44,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .projects-single-item-image {
     width: 100%;
     object-fit: cover;
+}
+
+.single-item-small-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -10px;
+
+    width: 20%;
+    height: 20%;
+
+}
+
+.small-image {
+    width: 60px;
 }
 
 .projects-single-item-info {
