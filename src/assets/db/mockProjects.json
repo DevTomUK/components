@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Personal Portfolio Website",
+        "description": "Create a personal portfolio website using ReactJS to showcase projects and skills.",
+        "link": "https://example.com/portfolio",
+        "images": [
+            "/images/1.jpg",
+            "/images/2.jpg",
+            "/images/3.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "E-commerce Platform",
+        "description": "Develop a fully functional e-commerce platform with product listings, shopping cart, and checkout features.",
+        "link": "https://example.com/ecommerce",
+        "images": [
+            "/images/4.jpg",
+            "/images/5.jpg",
+            "/images/6.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Real-Time Chat Application",
+        "description": "Build a real-time chat application with user authentication and message history.",
+        "link": "https://example.com/chatapp",
+        "images": [
+            "/images/7.jpg",
+            "/images/8.jpg",
+            "/images/9.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Task Management Tool",
+        "description": "Create a task management tool to help teams track project progress and manage tasks.",
+        "link": "https://example.com/taskmanagement",
+        "images": [
+            "/images/10.jpg",
+            "/images/11.jpg",
+            "/images/12.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Weather Forecast App",
+        "description": "Develop a weather forecast app that fetches and displays weather data from an external API.",
+        "link": "https://example.com/weatherapp",
+        "images": [
+            "/images/13.jpg",
+            "/images/14.jpg",
+            "/images/15.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Another App",
+        "description": "Another example app...",
+        "link": "https://example.com/weatherapp",
+        "images": [
+            "/images/16.jpg",
+            "/images/17.jpg",
+            "/images/18.jpg"
+        ]
+    }
+]

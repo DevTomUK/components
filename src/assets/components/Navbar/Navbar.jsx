@@ -17,9 +17,9 @@ export default function Navbar() {
                 Home
               </li>
             </Link>
-            <Link to={'./pagetwo'}>
+            <Link to={'./projects'}>
               <li className='navbar-link'>
-                Two
+                Projects
               </li>
             </Link>
           </ul>
